@@ -15,7 +15,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
 
 - Step 4: Assegnare una variabile al prezzo pieno (prezzo/km * km) e agli sconti
 
-- Step 5: Calcolo prezzo biglietto: prezzo pieno * sconto
+- Step 5: Calcolo prezzo biglietto: prezzo pieno - (prezzo pieno * sconto)
     - SE x < 18:
         - Applicare sconto del 20%
     - SE x > 65:
