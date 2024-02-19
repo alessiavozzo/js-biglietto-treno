@@ -52,5 +52,5 @@ else{
     ticketPrice = fullPrice;
 }
 
-alert(`Ticket price: ${ticketPrice} €`);
-console.log(`Ticket price: ${ticketPrice} €`);
+alert(`Ticket price: ${ticketPrice.toFixed(2)} €`);
+console.log(`Ticket price: ${ticketPrice.toFixed(2)} €`);
