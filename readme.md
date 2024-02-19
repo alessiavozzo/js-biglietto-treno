@@ -7,13 +7,15 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre decimali, per indicare centesimi sul prezzo).
 
 ## Steps
-- Step 1: Assegnare una variabile al prezzo/km e al prezzo pieno (prezzo/km * km)
+- Step 1: Assegnare una variabile al prezzo/km
 
 - Step 2: Chiedere all'utente quanti km deve percorrere e assegnarlo a una variabile (number)
 
 - Step 3: Chiedere all'utente l'età (x) (number)
 
-- Step 4: Calcolo prezzo biglietto: prezzo pieno * sconto
+- Step 4: Assegnare una variabile al prezzo pieno (prezzo/km * km) e agli sconti
+
+- Step 5: Calcolo prezzo biglietto: prezzo pieno * sconto
     - SE x < 18:
         - Applicare sconto del 20%
     - SE x > 65:
@@ -21,7 +23,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due cifre 
     - ALTRIMENTI (per 18 < x > 65):
         - Applicare prezzo pieno
 
-- Step 5: Visualizzare prezzo finale
+- Step 6: Visualizzare prezzo finale
     - Limitare il risultato a due cifre decimali
 
 
