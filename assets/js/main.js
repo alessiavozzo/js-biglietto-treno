@@ -38,19 +38,29 @@ else{
     console.log(`Ticket price: ${fullPrice.toFixed(2)} €`);
 } */
 
+//single alert outside if-else
 
 let ticketPrice;
 if(userAge < 18){
     alert("Minors are entitled to a discount!");
-    ticketPrice = fullPrice - (fullPrice * minorDiscount);
+    ticketPrice = (fullPrice - (fullPrice * minorDiscount)).toFixed(2);
 }
-else if(userAge > 65){
+else if(userAge > 65 && userAge <= 120){
     alert("Seniors are entitled to a discount!");
-    ticketPrice = fullPrice - (fullPrice * seniorDiscount);
+    ticketPrice = (fullPrice - (fullPrice * seniorDiscount)).toFixed(2);
+}
+else if(userAge > 120){
+    alert("NO VAMPIRES ALLOWED")
+    console.log("NO VAMPIRES ALLOWED")
+    ticketPrice = "No ticket for you"
+    
 }
 else{
-    ticketPrice = fullPrice;
+    ticketPrice = fullPrice.toFixed(2);
 }
 
-alert(`Ticket price: ${ticketPrice.toFixed(2)} €`);
-console.log(`Ticket price: ${ticketPrice.toFixed(2)} €`);
+
+alert(`Ticket price: ${ticketPrice} €`);
+console.log(`Ticket price: ${ticketPrice} €`);
+
+
