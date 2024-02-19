@@ -16,7 +16,7 @@ const seniorDiscount = 0.4;
 
 // ticket price: if-else
 
-if(userAge < 18){
+/* if(userAge < 18){
     alert("Minors are entitled to a discount!");
     const minorPrice = fullPrice - (fullPrice * minorDiscount);
     console.log(minorPrice);
@@ -36,4 +36,21 @@ else{
     console.log(fullPrice);
     alert(`Ticket price: ${fullPrice.toFixed(2)} €`);
     console.log(`Ticket price: ${fullPrice.toFixed(2)} €`);
+} */
+
+
+let ticketPrice;
+if(userAge < 18){
+    alert("Minors are entitled to a discount!");
+    ticketPrice = fullPrice - (fullPrice * minorDiscount);
 }
+else if(userAge > 65){
+    alert("Seniors are entitled to a discount!");
+    ticketPrice = fullPrice - (fullPrice * seniorDiscount);
+}
+else{
+    ticketPrice = fullPrice;
+}
+
+alert(`Ticket price: ${ticketPrice} €`);
+console.log(`Ticket price: ${ticketPrice} €`);
