@@ -29,9 +29,11 @@ else if (userAge > 65){
     const seniorPrice = fullPrice - (fullPrice * seniorDiscount);
     console.log(seniorPrice);
     alert(`Ticket price: ${seniorPrice.toFixed(2)} €`);
+    console.log(`Ticket price: ${seniorPrice.toFixed(2)} €`);
 }
 
 else{
     console.log(fullPrice);
     alert(`Ticket price: ${fullPrice.toFixed(2)} €`);
+    console.log(`Ticket price: ${fullPrice.toFixed(2)} €`);
 }
